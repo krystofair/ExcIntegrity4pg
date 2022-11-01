@@ -31,6 +31,16 @@
             <artifactId>jsoup</artifactId>
             <version>1.15.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.seedstack.addons.io</groupId>
+            <artifactId>io-supercsv</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.keayuan</groupId>
+            <artifactId>http-okhttp</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -65,10 +75,10 @@
                 <executions>
                     <execution>
                         <goals>
+                            <goal>execute</goal>
                             <goal>addSources</goal>
                             <goal>compile</goal>
                             <goal>removeStubs</goal>
-                            <goal>execute</goal>
                         </goals>
                     </execution>
                 </executions>
